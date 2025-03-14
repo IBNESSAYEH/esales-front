@@ -17,12 +17,12 @@ const Header = () => {
         <header className="bg-white shadow-sm sticky top-0 z-50">
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
-                    {/* Logo */}
+                   
                     <Link to="/" className="flex items-center">
                         <span className="text-2xl font-bold text-primary">E-Sales</span>
                     </Link>
 
-                    {/* Desktop Navigation */}
+                
                     <nav className="hidden md:flex space-x-8">
                         <Link to="/" className="text-gray-700 hover:text-primary transition-colors">
                             Home
@@ -35,7 +35,7 @@ const Header = () => {
                         </Link>
                     </nav>
 
-                    {/* Search Bar */}
+          
                     <div className="hidden md:flex items-center relative flex-1 max-w-md mx-8">
                         <input
                             type="text"
@@ -45,7 +45,6 @@ const Header = () => {
                         <FiSearch className="absolute left-3 text-gray-400" />
                     </div>
 
-                    {/* Desktop Icons */}
                     <div className="hidden md:flex items-center space-x-6">
                         <Link to="/wishlist" className="text-gray-700 hover:text-primary">
                             <FiHeart className="w-6 h-6" />
@@ -63,7 +62,6 @@ const Header = () => {
                         </Link>
                     </div>
 
-                    {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center">
                         <Link to="/cart" className="text-gray-700 hover:text-primary relative mr-4">
                             <FiShoppingCart className="w-6 h-6" />
@@ -79,7 +77,6 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* Mobile Menu */}
                 {isMenuOpen && (
                     <div className="md:hidden py-4 border-t">
                         <div className="flex items-center relative mb-4">
